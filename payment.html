@@ -1,0 +1,50 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Payment</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="mobile-container">
+    <h2>💰 Choose Your Subscription</h2>
+    <p>Select your plan to unlock premium alpha:</p>
+
+    <select id="planSelect">
+      <option value="">-- Select Plan --</option>
+      <option value="weekly">Weekly – $150 (0.9 SOL)</option>
+      <option value="monthly">Monthly – $500 (3 SOL) — Save 15%</option>
+      <option value="yearly">Yearly – $5000 (28 SOL) — Save 38%</option>
+    </select>
+
+    <div id="paymentBox" style="display:none; margin-top: 2rem;">
+      <h3>⚠️ Send SOL Only</h3>
+      <p class="warning">Do <strong>not</strong> send USDC, BONK, or any other token. Only <strong>SOL</strong>.</p>
+
+      <div class="wallet-box">
+        <span id="walletAddress">CqRBn6Fi4ymL8yfkEGLZBgrNYXgpq6QLMSJ658Ts5pJk</span>
+        <button id="copyBtn">📋 Copy</button>
+      </div>
+
+      <p class="note">Once you've paid, continue below:</p>
+      <a href="verify.html">
+  <button class="cta">✅ I've Paid — Let Me In</button>
+</a>
+    </div>
+
+    <hr style="margin: 2rem 0;">
+
+    <h3>📊 Meme Coin Watchlist</h3>
+    <div class="chart">
+      <ul>
+        <li>🔥 Fartcoin — $0.00042</li>
+        <li>🤡 Troll — $0.0021</li>
+        <li>😎 ChillGuy — $0.00089</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- verify.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verify Access</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="mobile-container">
+    <h2>⏳ Waiting for Verification</h2>
+
+    <p class="vip-text">
+      📩 Check your email for a 6-digit code to access the VVIP room.
+    </p>
+
+    <p style="color: red; font-weight: bold; text-align: center;">
+      ⚠️ You will NOT receive any code if payment is not completed.<br>
+      Make sure you sent SOL to the correct wallet address first.
+    </p>
+<!-- Go Back Button -->
+<a href="payment.html">
+  <button style="margin-top: 15px; padding: 10px 20px; border: none; border-radius: 8px; background: #444; color: white; font-weight: bold;">
+    🔙 Go Back to Payment
+  </button>
+</a>
+
+    <form id="verifyForm">
+      <input type="text" id="verifyCode" placeholder="🔐 Enter 6-digit code" maxlength="6" required />
+      <input type="text" id="xUsername" placeholder="🐦 Your X (Twitter) username" required />
+      <input type="text" id="fullName" placeholder="🧑 Full Name" required />
+      <input type="text" id="solAddress" placeholder="💸 SOL Wallet You Paid From" required />
+      <button type="submit">🚀 Open Access</button>
+    </form>
+
+    <p id="verifyMessage" class="foot-credit"></p>
+  </div>
+</body>
+</html>
